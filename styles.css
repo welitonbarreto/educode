@@ -1,0 +1,248 @@
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+
+header {
+    color: white;
+    background-color: #3675AA;
+    padding: 16px;
+}
+
+.navegacao-lista {
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    height: 100%;
+}
+
+.navegacao-lista {
+    list-style: none;
+}
+
+.navegacao-link {
+    text-decoration: none;
+    color: #FCFCFC;
+}
+
+.offcanvas {
+    background-color: #3675AA;
+    max-width: 360px;
+}
+
+.offcanvas-title {
+    color: #FCFCFC;
+    font-size: 32px;
+}
+
+.offcanvas .navegacao-itens {
+    border-bottom: 1px solid #FCFCFC;
+    padding-bottom: 12px;
+    width: 100%;
+}
+
+.offcanvas .navegacao-itens:last-child {
+    border-bottom: none;
+}
+
+.secao-introducao {
+    background-color: #FCFCFC;
+    color: #1D405C;
+}
+
+
+.secao-introducao .titulo {
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+.secao-introducao .paragrafo {
+    font-size: 24px;
+}
+
+.secao-introducao .logotipo {
+    max-width: 360px;
+    margin-bottom: 16px;
+}
+
+.secao-apoiadores, .secao-equipe {
+    background-color: #1D405C;
+}
+
+.secao-apoiadores .titulo, .secao-equipe .titulo {
+    color: #FCFCFC;
+    margin-bottom: 16px;
+}
+
+.secao-apoiadores img{
+    max-width: 100%;
+}
+
+.secao-apoiadores .container-carousel {
+    max-width: 700px;
+}
+
+.secao-equipe .card-membro {
+    text-align: center;
+    color: #FCFCFC;
+    padding: 16px 8px;
+    border: 2px solid #3675AA;
+    border-radius: 15px;
+    margin-bottom: 16px;
+}
+
+.secao-equipe .card-membro .nome {
+    color: #BFC6CA;
+}
+
+.secao-equipe .card-membro .foto {
+    border-radius: 50%;
+    width: 250px;
+    margin: 16px 0;
+}
+
+
+.secao-equipe .card-membro .funcao {
+    font-style: italic;
+    margin-bottom: 8px;
+}
+
+.secao-equipe .card-membro .redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 8px;
+    margin-top: 16px;
+}
+
+.secao-equipe .card-membro .rede-social {
+    width: 50px;
+}
+
+
+
+@media (min-width: 0px) {
+
+    .botao-offcanvas {
+        background-color: transparent;
+        border: none;
+        border-right: 1px solid #FCFCFC;
+        display: block;
+        padding: 0 16px 0 0;
+    }
+
+    .botao-offcanvas img {
+        width: 40px;
+    }
+
+    .navegacao--padrao {
+        display: none;
+    }
+
+    .secao-introducao {
+        padding-top: 24px;
+        padding-bottom: 36px;
+    }
+
+    .secao-introducao .titulo {
+        font-size: 36px;
+    }
+
+
+    .secao-introducao .paragrafo {
+        font-size: 20px;
+    }
+
+    .secao-apoiadores, .secao-equipe {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .secao-apoiadores .titulo, .secao-equipe .titulo  {
+        font-size: 28px;
+    }
+
+
+    .secao-apoiadores .container-carousel, .secao-equipe .cards-equipes {
+        margin-top: 0px;
+    }    
+
+
+    .secao-equipe .card-membro .redes {
+        gap: 16px;
+    }
+
+    .secao-equipe .card-membro .nome {
+        font-size: 24px;
+    }
+
+    .secao-equipe .card-membro .funcao {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 576px) {
+    
+    .botao-offcanvas {
+        display: none;
+    }
+    
+    .navegacao--padrao {
+        display: block;
+    }
+
+    .secao-equipe .card-membro .redes {
+        padding: 16px;
+    }
+}
+
+
+
+@media (min-width: 768px) {
+    .secao-introducao {
+        padding-top: 48px;
+        padding-bottom: 96px;
+    }
+
+    .secao-introducao .titulo {
+        font-size: 40px;
+    }
+
+
+    .secao-introducao .paragrafo {
+        font-size: 24px;
+    }
+
+
+    .secao-apoiadores, .secao-equipe {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+
+    .secao-apoiadores .titulo, .secao-equipe .titulo {
+        font-size: 36px;
+    }
+
+    .secao-apoiadores .container-carousel, .secao-equipe .cards-equipes {
+        margin-top: 48px;
+    }
+
+    .secao-equipe .card-membro .redes {
+        gap: 32px;
+    }
+    
+    .secao-equipe .card-membro .nome {
+        font-size: 28px;
+        margin-bottom: 16px;
+    }
+
+    .secao-equipe .card-membro .funcao {
+        font-size: 24px;
+    }
+
+}
+
+
+
