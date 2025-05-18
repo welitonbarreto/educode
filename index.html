@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EDUCODE</title>
+    <link rel="icon" type="image/x-icon" href="./assets/icon.png">
     <link href="./css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/styles.css">
@@ -13,8 +14,7 @@
 <body>
     <header>
         <div class="container-lg d-flex justify-content-start justify-content-sm-end">
-            <button class="botao-offcanvas" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavegacao"
-                aria-controls="offcanvasExample">
+            <button class="botao-offcanvas" type="button" data-bs-toggle="offcanvas"data-bs-target="#offcanvasNavegacao" aria-controls="offcanvasNavegacao">
                 <img src="./assets/mais.png" alt="Expandir sidebar">
             </button>
 
@@ -27,7 +27,7 @@
                         <a href="#secaoEquipe" class="navegacao-link">Equipe</a>
                     </li>
                     <li class="navegacao-itens">
-                        <a href="" class="navegacao-link">Localização</a>
+                        <a href="#secaoLocalizacao" class="navegacao-link">Localização</a>
                     </li>
 
                     <li class="navegacao-itens">
@@ -38,7 +38,7 @@
         </div>
     </header>
 
-    <section id="secaoIntroducao" class="secao-introducao">
+    <section id="secaoIntroducao" class="secao secao-introducao">
         <div class="container-lg">
             <div class="row">
                 <div class="col-12 col-md-6 d-flex flex-column justify-content-center mb-4">
@@ -53,10 +53,10 @@
         </div>
     </section>
 
-    <section id="secaoApoiadores" class="secao-apoiadores">
+    <section id="secaoApoiadores" class="secao secao-apoiadores">
         <div class="container-lg">
             <div class="d-flex text-center flex-column">
-                <h2 class="titulo mb-4">Conheça nosso apoiadores</h2>
+                <h2 class="titulo">Conheça nosso apoiadores</h2>
 
                 <div class="d-flex justify-content-center align-items-center">
                     <div class="container-carousel">
@@ -97,13 +97,11 @@
         </div>
     </section>
 
-    <section id="secaoEquipe" class="secao-equipe">
+    <section id="secaoEquipe" class="secao secao-equipe">
         <div class="container-lg">
-            <div class="text-center">
-                <h2 class="titulo mb-4">Conheça nossa equipe</h2>
-            </div>
+            <h2 class="titulo">Conheça nossa equipe</h2>
             <div class="row cards-equipes">
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-4 mb-3">
                     <div class="card-membro">
                         <img class="foto" src="./assets/membro.jpg" />
                         <h3 class="nome">João da Silva</h3>
@@ -118,7 +116,7 @@
 
                     </div>
                 </div>
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-4 mb-3">
                     <div class="card-membro">
                         <img class="foto" src="./assets/membro.jpg" />
                         <h3 class="nome">João da Silva</h3>
@@ -133,12 +131,14 @@
 
                     </div>
                 </div>
-                <div class="col-12 col-lg-4">
+                <div class="col-12 col-lg-4 mb-3">
                     <div class="card-membro">
                         <img class="foto" src="./assets/membro.jpg" />
                         <h3 class="nome">João da Silva</h3>
                         <h4 class="funcao">Coordenador</h4>
-                        <p class="descricao">Apaixonado por ensinar tecnologia para jovens talentos</p>
+                        <p class="descricao">Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum optio
+                            asperiores nesciunt? Quae amet error expedita qui nihil voluptatum magnam, necessitatibus
+                            officia, quibusdam mollitia at sed cumque excepturi maxime vero?</p>
 
                         <ul class="redes">
                             <li><a><img src="./assets/instagram.png" class="rede-social"></a></li>
@@ -154,34 +154,49 @@
     </section>
 
 
-    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavegacao"
+
+    <section id="secaoLocalizacao" class="secao secao-localizacao">
+        <div class="container-lg">
+            <h2 class="titulo">Localização </h2>
+            <div class="container-mapa">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3839.7876669688185!2d-47.870215800000004!3d-15.762368000000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x935a3bc67888ec65%3A0xd4645b9676438d99!2sLaborat%C3%B3rio%20de%20Inform%C3%A1tica%20(LINF)!5e0!3m2!1spt-BR!2sbr!4v1747574105386!5m2!1spt-BR!2sbr"
+                    width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+    </section>
+
+
+    <div class="offcanvas offcanvas-start"  data-bs-scroll="true" tabindex="-1" id="offcanvasNavegacao"
         aria-labelledby="offcanvasNavegacaoLabel">
         <div class="offcanvas-header">
             <h2 class="offcanvas-title" id="offcanvasNavegacaoLabel">Educode</h2>
-            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-                <nav class="navegacao--offcanvas">
-                    <ul class="navegacao-lista d-flex flex-column align-items-start gap-2">
-                        <li class="navegacao-itens">
-                            <a href="#secaoApoiadores" class="navegacao-link">Apoiadores</a>
-                        </li>
-                        <li class="navegacao-itens">
-                            <a href="#secaoEquipe" class="navegacao-link">Equipe</a>
-                        </li>
-                        <li class="navegacao-itens">
-                            <a href="#secaoEquipe" class="navegacao-link">Localização</a>
-                        </li>
+            <nav id="navegacaoCanvas" class="navegacao--offcanvas">
+                <ul class="navegacao-lista d-flex flex-column align-items-start gap-2">
+                    <li class="navegacao-itens">
+                        <a href="#secaoApoiadores" class="navegacao-link">Apoiadores</a>
+                    </li>
+                    <li class="navegacao-itens">
+                        <a href="#secaoEquipe" class="navegacao-link">Equipe</a>
+                    </li>
+                    <li class="navegacao-itens">
+                        <a href="#secaoLocalizacao" class="navegacao-link">Localização</a>
+                    </li>
 
-                        <li class="navegacao-itens">
-                            <a href="#secaoEquipe" class="navegacao-link btn btn-warning">Inscreva-se</a>
-                        </li>
-                    </ul>
-                </nav>
+                    <li class="navegacao-itens">
+                        <a href="#" class="navegacao-link btn btn-warning">Inscreva-se</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </div>
-
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>    
 </body>
 
 </html>

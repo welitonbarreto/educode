@@ -51,15 +51,27 @@ header {
     border-bottom: none;
 }
 
+.secao {
+    background-color: #1D405C;
+}
+
+.secao .titulo {
+    text-align: center;
+    color: #FCFCFC;
+    margin-bottom: 24px;
+
+}
+
 .secao-introducao {
     background-color: #FCFCFC;
     color: #1D405C;
 }
 
-
 .secao-introducao .titulo {
+    color: #1D405C;
     font-size: 40px;
     margin-bottom: 16px;
+    text-align: start;
 }
 
 .secao-introducao .paragrafo {
@@ -68,15 +80,6 @@ header {
 
 .secao-introducao .logotipo {
     max-width: 360px;
-    margin-bottom: 16px;
-}
-
-.secao-apoiadores, .secao-equipe {
-    background-color: #1D405C;
-}
-
-.secao-apoiadores .titulo, .secao-equipe .titulo {
-    color: #FCFCFC;
     margin-bottom: 16px;
 }
 
@@ -89,12 +92,15 @@ header {
 }
 
 .secao-equipe .card-membro {
-    text-align: center;
-    color: #FCFCFC;
-    padding: 16px 8px;
+    align-items: center;
     border: 2px solid #3675AA;
     border-radius: 15px;
-    margin-bottom: 16px;
+    color: #FCFCFC;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding: 16px 8px;
+    text-align: center;
 }
 
 .secao-equipe .card-membro .nome {
@@ -105,6 +111,10 @@ header {
     border-radius: 50%;
     width: 250px;
     margin: 16px 0;
+}
+
+.secao-equipe .card-membro .descricao {
+    margin-bottom: 16px;
 }
 
 
@@ -118,7 +128,7 @@ header {
     flex-direction: row;
     justify-content: center;
     padding: 8px;
-    margin-top: 16px;
+    margin-top: auto;
 }
 
 .secao-equipe .card-membro .rede-social {
@@ -126,8 +136,21 @@ header {
 }
 
 
+.secao-localizacao .container-mapa {
+    height: 450px;
+    width: 100%;
+}
+
 
 @media (min-width: 0px) {
+    .secao {
+        padding-top: 24px;
+        padding-bottom: 24px;
+    }
+
+    .secao .titulo  {
+        font-size: 28px;
+    }
 
     .botao-offcanvas {
         background-color: transparent;
@@ -154,20 +177,9 @@ header {
         font-size: 36px;
     }
 
-
     .secao-introducao .paragrafo {
         font-size: 20px;
     }
-
-    .secao-apoiadores, .secao-equipe {
-        padding-top: 24px;
-        padding-bottom: 24px;
-    }
-
-    .secao-apoiadores .titulo, .secao-equipe .titulo  {
-        font-size: 28px;
-    }
-
 
     .secao-apoiadores .container-carousel, .secao-equipe .cards-equipes {
         margin-top: 0px;
@@ -205,6 +217,15 @@ header {
 
 
 @media (min-width: 768px) {
+    .secao {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    .secao .titulo {
+        font-size: 36px;
+    }
+
     .secao-introducao {
         padding-top: 48px;
         padding-bottom: 96px;
@@ -217,17 +238,6 @@ header {
 
     .secao-introducao .paragrafo {
         font-size: 24px;
-    }
-
-
-    .secao-apoiadores, .secao-equipe {
-        padding-top: 48px;
-        padding-bottom: 48px;
-    }
-
-
-    .secao-apoiadores .titulo, .secao-equipe .titulo {
-        font-size: 36px;
     }
 
     .secao-apoiadores .container-carousel, .secao-equipe .cards-equipes {
