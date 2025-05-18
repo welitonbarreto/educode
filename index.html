@@ -14,7 +14,7 @@
 <body>
     <header>
         <div class="container-lg d-flex justify-content-start justify-content-sm-end">
-            <button class="botao-offcanvas" type="button" data-bs-toggle="offcanvas"data-bs-target="#offcanvasNavegacao" aria-controls="offcanvasNavegacao">
+            <button class="botao-offcanvas" type="button" aria-controls="offcanvasNavegacao">
                 <img src="./assets/mais.png" alt="Expandir sidebar">
             </button>
 
@@ -173,23 +173,23 @@
         aria-labelledby="offcanvasNavegacaoLabel">
         <div class="offcanvas-header">
             <h2 class="offcanvas-title" id="offcanvasNavegacaoLabel">Educode</h2>
-            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            <button id="botaoR" type="button" class="btn-close btn-close-white"  data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-            <nav id="navegacaoCanvas" class="navegacao--offcanvas">
+            <nav class="navegacao--offcanvas">
                 <ul class="navegacao-lista d-flex flex-column align-items-start gap-2">
                     <li class="navegacao-itens">
-                        <a href="#secaoApoiadores" class="navegacao-link">Apoiadores</a>
+                        <a href="#secaoApoiadores" class="navegacao-link" data-bs-dismiss="offcanvas" data-bs-target="offcanvasNavegacao">Apoiadores</a>
                     </li>
                     <li class="navegacao-itens">
-                        <a href="#secaoEquipe" class="navegacao-link">Equipe</a>
+                        <a href="#secaoEquipe" class="navegacao-link" data-bs-dismiss="offcanvas" data-bs-target="offcanvasNavegacao">Equipe</a>
                     </li>
                     <li class="navegacao-itens">
-                        <a href="#secaoLocalizacao" class="navegacao-link">Localização</a>
+                        <a href="#secaoLocalizacao" class="navegacao-link" data-bs-dismiss="offcanvas" data-bs-target="offcanvasNavegacao">Localização</a>
                     </li>
 
                     <li class="navegacao-itens">
-                        <a href="#" class="navegacao-link btn btn-warning">Inscreva-se</a>
+                        <a href="#" class="navegacao-link btn btn-warning" data-bs-dismiss="offcanvas" data-bs-target="offcanvasNavegacao">Inscreva-se</a>
                     </li>
                 </ul>
             </nav>
