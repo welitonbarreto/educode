@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'Open Sans';
-  src: url(../fonts/open-sans/OpenSans-VariableFont_wdth\,wght.ttf);
+    font-family: 'Open Sans';
+    src: url(../fonts/open-sans/OpenSans-VariableFont_wdth\,wght.ttf);
 }
 
 body {
-  font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", sans-serif;
 }
 
 
@@ -83,12 +83,8 @@ header {
     margin-bottom: 16px;
 }
 
-.secao-apoiadores img{
+.secao-apoiadores img {
     max-width: 100%;
-}
-
-.secao-apoiadores .container-carousel {
-    max-width: 700px;
 }
 
 .secao-equipe .card-membro {
@@ -143,12 +139,13 @@ header {
 
 
 @media (min-width: 0px) {
+
     .secao {
         padding-top: 24px;
         padding-bottom: 24px;
     }
 
-    .secao .titulo  {
+    .secao .titulo {
         font-size: 28px;
     }
 
@@ -181,10 +178,28 @@ header {
         font-size: 20px;
     }
 
-    .secao-apoiadores .container-carousel, .secao-equipe .cards-equipes {
+    .secao-apoiadores .container-carousel,
+    .secao-equipe .cards-equipes {
         margin-top: 0px;
-    }    
+    }
 
+    .secao-apoiadores .container-carousel {
+        width: 700px;
+        max-width: 700px;
+    }
+
+    #carouselApoiadores {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .secao-apoiadores .carousel-control-prev {
+        display: none;
+    }
+
+    .secao-apoiadores .carousel-control-next {
+        display: none;
+    }
 
     .secao-equipe .card-membro .redes {
         gap: 16px;
@@ -200,18 +215,37 @@ header {
 }
 
 @media (min-width: 576px) {
-    
+
     .botao-offcanvas {
         display: none;
     }
-    
+
     .navegacao--padrao {
         display: block;
+    }
+
+    .container-carousel {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .secao-apoiadores .carousel-control-prev {
+        display: flex;
+    }
+
+    .secao-apoiadores .carousel-control-next {
+        display: flex;
+    }
+
+    .secao-apoiadores .carousel-item img {
+        width: 100%;
     }
 
     .secao-equipe .card-membro .redes {
         padding: 16px;
     }
+
+
 }
 
 
@@ -240,14 +274,18 @@ header {
         font-size: 24px;
     }
 
-    .secao-apoiadores .container-carousel, .secao-equipe .cards-equipes {
+    .secao-apoiadores .container-carousel {
+        margin-top: 24px;
+    }
+    
+    .secao-equipe .cards-equipes {
         margin-top: 48px;
     }
 
     .secao-equipe .card-membro .redes {
         gap: 32px;
     }
-    
+
     .secao-equipe .card-membro .nome {
         font-size: 28px;
         margin-bottom: 16px;
@@ -260,4 +298,29 @@ header {
 }
 
 
+@media (min-width: 1920px) {
+    .secao-apoiadores .container-carousel {
+        max-width: 900px;
+        width: 900px;
+    }
+}
 
+
+.carousel-control-prev {
+    left: 0;
+    position: absolute;
+    width: 50px;
+    transform: translateX(-100%);
+}
+
+.carousel-control-next {
+    position: absolute;
+    right: 0;
+    width: 50px;
+    transform: translateX(100%);
+}
+
+.carousel-indicators {
+    transform: translateY(calc(100% + 10px));
+    margin-bottom: 0;
+}
