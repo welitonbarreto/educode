@@ -164,6 +164,7 @@ header {
 
     .navegacao--padrao {
         display: none;
+        padding: 8px 0;
     }
 
     .secao-introducao {
