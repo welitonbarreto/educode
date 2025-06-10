@@ -1,7 +1,7 @@
 colaboradoresEquipe = [
     {
         urlFoto: 'assets/professores/foto1.jpg',
-        nome: 'Marcelo Marotta',
+        nome: 'Marcelo Antônio Marotta',
         funcao: 'Coordenador do projeto',
         descricao: 'Doutor em Ciência da Computação junto ao Grupo de Redes de Computadores do Instituto de Informática da Universidade Federal do Rio Grande do Sul (UFRGS). Atualmente, é pesquisador nas áreas de Redes de Acesso a Rádio baseadas em Conceitos de Nuvem (C-RAN), Redes de Próxima Geração, Internet do Futuro, Gerenciamento de Processos de Negócios, Rede Definida por Software, Internet das Coisas e etc.'
     },
@@ -28,6 +28,13 @@ colaboradoresEquipe = [
         nome: 'Ricardo Pezzuol Jacobi',
         funcao: 'Professor',
         descricao: 'Doutor em Ciências Aplicadas pela Université Catholique de Louvain no ano de 1993. Foi Diretor do Instituto de Ciências Exatas da UnB no período de 2004 a 2007.  Atua na área de Ciência da Computação e Microeletrônica, com ênfase em CAD, arquiteturas reconfiguráveis e sistemas monoliticos (SoC).'
+    },
+    {
+        urlFoto: 'assets/professores/foto6.jpg',
+        nome: 'Roberto Vito Rodrigues Filho',
+        funcao: 'Professor',
+        descricao: 'Doutor em Ciência da Computação pela Universidade de Lancaster, Reino Unido (2018), além de mestre e bacharel pela Universidade Federal de Goiás (INF-UFG, 2013). Seus interesses de pesquisa concentram-se em Computação Autonômica, com foco em sistemas distribuídos emergentes, auto-organizáveis e auto-gerenciáveis.'
+
     }
 ]
 
@@ -39,8 +46,6 @@ function geraCardHtml(colaborador) {
                     <h3 class="nome">${colaborador.nome}</h3>
                     <h4 class="funcao">${colaborador.funcao}</h4>
                     <p class="descricao">${colaborador.descricao}</p>
-                    <ul class="redes">
-                    </ul>
                 </div>
             </div>`
 }
